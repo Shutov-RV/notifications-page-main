@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+a{
+	color: inherit;
+}
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 16px;
+
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{
+	vertical-align: top;
+	max-width: 100%;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*---------обнуление-----------*/
+
+
+/* Переменные */
+:root{
+    /* color */
+    --Red: #f65351;
+    --Blue: #0a317b;
+
+    --White: #ffffff;
+    --Very-light-grayish-blue: #f7fafd;
+    --Light-grayish-blue-1: #e5effa;
+    --Light-grayish-blue-2: #dde7ee;
+    --Grayish-blue: #939dae;
+    --Dark-grayish-blue: #5e6778;
+    --Very-dark-blue: #1c202b;
+
+
+    /* typography */
+    --family:'Plus Jakarta Sans', sans-serif;
+    --font-size-base: 16px;
+    --font-size-big: 20px;
+
+    --weight-normal: 500;
+    --weight-bold: 800;
+
+    /* border */
+    --radius:0.5rem;
+    --radius-full:50%;
+}
+
+body{
+    font-family: var(--family);
+    font-size: var(--font-size-base);
+    background-color:var(#f9fafe);
+}
+.notifications{
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    /* align-items:flex-end; */
+    background-color: var(--White);
+}
+
+
+.header{
+    display: grid;
+    padding: 1.5rem 0;
+    gap: 1rem;
+    grid-template-columns: 130px 30px auto;
+}
+
+.appname{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #1c202b;
+    font-weight: var(--weight-bold);
+    font-size: 1.3rem;
+
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    color: var(--White);
+    background-color:var(--Blue);
+    font-size: 0.8rem;
+}
+.allread{
+    text-align:right;
+    color:var(--Grayish-blue);
+    font-size: 0.8rem;
+}
+
+
+.card__item{
+    display: flex;
+    background-color:var(--Very-light-grayish-blue);
+    gap: 1rem;
+}
+
+.messagecard {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-areas: " a b c";
+    grid-template-rows: 2;
+    padding: 0.3rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+
+}
+
+.messagecard__active{
+    background-color:var(--Very-light-grayish-blue);
+
+}
+
+.photo{
+    grid-area: c;
+    align-self:end;
+    width: 40px;
+    height: 40px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto -10px;
+    cursor: pointer;
+
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    padding: 0.2rem;
+}
+.message {
+    font-size: 0.8rem;
+}
+.message__author {
+    display: inline;
+    font-weight: var(--weight-bold);
+    cursor: pointer;
+}
+.message__theme {
+    line-height: 1.2;
+    color:var(--Grayish-blue);
+}
+.text__link{
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--weight-bold);
+    cursor: pointer;
+}
+.group__link{
+    cursor: pointer;
+    color: var(--Blue);
+    font-weight: var(--weight-bold);
+}
+.checkpoint{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color:var(--Red);
+    padding-bottom: 3px;
+    margin: auto 3px;
+    border-radius: var(--radius-full);
+}
+.message__text{
+    border: 1px solid;
+    padding: 1rem;
+    font-size: 0.8rem;
+    border-radius: var(--radius);
+    color: var(--Grayish-blue);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.message__text:hover{
+    background-color:var(--Light-grayish-blue-2);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.read{
+    display: none;
+}
+.date__publication {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 0.8rem;
+    color:var(--Grayish-blue);
+    margin-bottom: 0.5rem;
+}
+
+.allread:hover, .message__author:hover, .text__link:hover{
+    color: var(--Blue);
+}
+
+
+@media (min-width: 900px){
+
+    html{
+        font-size: var(--font-size-big);
+    }
+    .header{
+        gap: 2rem;
+    }
+    .messagecard {
+        grid-template-columns: 70px 1fr 50px;
+
+    }
+    .avatar {
+        width: 55px;
+        height: 55px;
+        padding: 0.3rem;
+    }
+    .photo{
+        width: 55px;
+        height: 55px;
+    }
+}

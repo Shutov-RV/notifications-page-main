@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="notifications">
+
+          <header class="header">
+            <h1 class="appname">Notifications</h1>
+            <div class="counter"></div>
+            <button class="allread">Mark all as read</button>
+          </header>
+
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-mark-webber.webp" alt="mark-webber">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Mark Webber
+              </p>
+              <span class="message__theme">reacted to your recent post <span class="text__link">My first tournament today!</span></span>
+              <span class="checkpoint"></span>
+            </div>
+            <div class="date__publication">1m ago</div>
+          </article>
+
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-angela-gray.webp" alt="angela-gray">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Angela Gray
+              </p>
+              <span class="message__theme">followed you</span>
+              <span class="checkpoint"></span>
+            </div>
+
+            <div class="date__publication">5m ago</div>
+          </article>
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Jacob Thompson
+              </p>
+              <span class="message__theme">has joined your group <span class="group__link">Chess Club</span></span>
+              <span class="checkpoint"></span>
+            </div>
+
+            <div class="date__publication">1 day ago</div>
+          </article>
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Rizky Hasanuddin
+              </p>
+              <span class="message__theme">sent you a private message</span>
+              <span class="checkpoint"></span>
+            </div>
+
+            <div class="date__publication">5 days ago</div>
+          </article>
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Kimberly Smith
+              </p>
+              <span class="message__theme">commented on your picture</span>
+              <span class="checkpoint"></span>
+
+            </div>
+            <div class="photo">
+              <img src="./assets/images/image-chess.webp" alt="">
+            </div>
+
+            <div class="date__publication">1 week ago</div>
+          </article>
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Nathan Peterson
+              </p>
+              <span class="message__theme">reacted to your recent post <span class="text__link">5 end-game strategies to increase your win rate</span></span>
+              <span class="checkpoint"></span>
+            </div>
+
+            <div class="date__publication">2 weeks ago</div>
+          </article>
+          <article class="messagecard messagecard__active">
+            <div class="avatar">
+              <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+            </div>
+
+            <div class="message">
+              <p class="message__author">
+                Anna Kim
+              </p>
+              <span class="message__theme">left the group <span class="group__link">Chess Club!</span></span>
+              <span class="checkpoint"></span>
+            </div>
+
+            <div class="date__publication">2 weeks ago</div>
+          </article>
+
+
+
+  </section>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
